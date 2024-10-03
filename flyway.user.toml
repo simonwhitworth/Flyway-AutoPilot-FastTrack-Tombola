@@ -1,4 +1,4 @@
-[flywayDesktop]
+flywayDesktop = { }
 
 [redgateCompare]
 filterFile = "filter.rgf"

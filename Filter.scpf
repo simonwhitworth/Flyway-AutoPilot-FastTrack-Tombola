@@ -2,7 +2,7 @@
 <!--
 SQL Compare
 SQL Compare
-Version:14.7.8.21163-->
+Version:15.0.7.23280-->
 <NamedFilter version="1" type="SQLCompareFilter">
   <!--This filter can be loaded using the SQL Compare UI or used with a SQL Compare command line session using the /filter switch-->
   <FilterName>Filter created using SQL Source Control</FilterName>
@@ -75,7 +75,7 @@ Version:14.7.8.21163-->
       </Queue>
       <Role version="1">
         <Include>True</Include>
-        <Expression />
+        <Expression>TRUE</Expression>
       </Role>
       <Route version="1">
         <Include>True</Include>
@@ -127,7 +127,7 @@ Version:14.7.8.21163-->
       </Table>
       <User version="1">
         <Include>True</Include>
-        <Expression />
+        <Expression>TRUE</Expression>
       </User>
       <UserDefinedType version="1">
         <Include>True</Include>

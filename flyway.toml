@@ -34,7 +34,6 @@ defaultSchema = "dbo"
 baselineOnMigrate = true
 baselineVersion = "001_20230703120714"
 
-
 [flywayDesktop]
 developmentEnvironment = "development"
 shadowEnvironment = "shadow"
@@ -43,8 +42,9 @@ schemaModel = "./schema-model"
   [flywayDesktop.generate]
   undoScripts = true
 
-[redgateCompare.sqlserver]
-filterFile = "Filter.scpf"
+[redgateCompare]
+  [redgateCompare.sqlserver]
+  filterFile = "Filter.scpf"
 
 [redgateCompare.sqlserver.options.behavior]
 addCreateOrAlterForRerunnableScripts = false
@@ -108,7 +108,7 @@ ignoreSynonymDependencies = false
 ignoreSystemNamedConstraintAndIndexNames = false
 ignoreTsqltFrameworkAndTests = true
 ignoreUserProperties = true
-ignoreUsersPermissionsAndRoleMemberships = true
+ignoreUsersPermissionsAndRoleMemberships = false
 ignoreWhiteSpace = true
 ignoreWithElementOrder = true
 ignoreWithEncryption = false
